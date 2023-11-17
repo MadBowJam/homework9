@@ -1,0 +1,44 @@
+:root {
+  --square-width: 70px;
+  --padding: 10px
+}
+.container {
+  max-width: 500px;
+  height: 70px;
+  margin: 25px auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+.container.-h140 {
+  height: 140px;
+}
+.container_square {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 10px;
+}
+.container_square.-rectangle {
+  height: 120px;
+}
+.container_square.-right {
+  float: right;
+}
+.container_square.-left {
+  float: left;
+}
+.container_square.-move {
+  margin-left: calc(100% - var(--square-width)*4 + var(--padding));
+}
+.container_square.-move_center {
+  margin-left: calc(50% - var(--square-width) + var(--padding));
+}
+.container_square.-move_center_small {
+  margin-left: calc(50% + var(--padding));
+}
+.container_square.-move_end {
+  margin-left: calc(100% - var(--square-width)*2 + var(--padding));
+}
+.container_square.-move_end_small {
+  margin-left: calc(100% - var(--square-width) + var(--padding));
+}
